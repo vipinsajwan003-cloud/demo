@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function generateQR() {
+      const qrBox = document.getElementById("qr");
+      const random = Math.floor(Math.random() * 1000000);
+      qrBox.textContent = "QR-" + random; // mock QR text
+    }
+    window.onload = generateQR;
+  </script>
+</head>
+<body>
+    <header>
+    <h1>✅ Booking Confirmed!</h1>
+  </header>
+
+  <main class="confirmation">
+    <p>Thank you for booking your pass 🎉</p>
+    <div id="qr" class="qr-code"></div>
+    <p>Show th  is QR at the entry gate.</p>
+    <a href="event.html" class="butt">Back to Events</a>
+  </main>
+
+</body>
+</html>
